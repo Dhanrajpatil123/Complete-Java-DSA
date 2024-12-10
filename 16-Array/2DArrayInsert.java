@@ -12,6 +12,15 @@ public class MyArray {
         }
     }
 
+
+    public static void insertElementIn2DArray(int[][] array, int pos1, int pos2, int element){
+    
+    insertElement(array[pos1], element, pos2);
+
+    }
+
+
+    
     public static int[][] insertElement2D(int[][] array, int position1, int position2, int element){
 
         if (array.length <= 0 || position1 > array.length){
