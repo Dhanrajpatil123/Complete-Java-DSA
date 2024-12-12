@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _19_Interview_Que {
 
-    public static int binarySearchFloor(int[] arr, int target){
+       public static int binarySearchFloor(int[] arr, int target){
 
         int start = 0;
         int end = arr.length-1;
@@ -15,6 +15,7 @@ public class _19_Interview_Que {
             int mid = start + (end - start) /2 ;
 
             if (arr[mid] == target){
+                ans = arr[mid];
                 return ans;
             }
             else if (arr[mid] < target){
