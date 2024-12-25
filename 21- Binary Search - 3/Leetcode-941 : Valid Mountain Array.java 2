@@ -1,8 +1,13 @@
 class Solution {
+
+    // operation -> O(n)
+    
     public boolean validMountainArray(int[] arr) {
         
         int index = 0;
         int n = arr.length; 
+
+        // find all increasing sequence ( find the peak)
 
             while(index < n-1){
                 
@@ -18,6 +23,8 @@ class Solution {
                 return false;
             }
 
+
+        // find all decreasing sequence ( find the end of the array)
 
             while(index < n-1){
 
